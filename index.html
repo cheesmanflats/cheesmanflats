@@ -2,71 +2,152 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Brownstone Investments LLC</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-bar {
+      background: #0072ce;
+      padding: 10px 20px;
+      color: white;
+      font-size: 14px;
+      text-align: right;
+    }
+
+    .nav {
+      background: #0072ce;
+      padding: 10px 0;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      display: flex;
+      gap: 40px;
+    }
+
+    .main-content {
+      flex: 2;
+    }
+
+    .sidebar {
+      flex: 1;
+    }
+
+    h2, h3 {
+      color: #222;
+    }
+
+    .highlight-red {
+      color: red;
+      font-weight: bold;
+    }
+
+    .box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .box input[type="text"],
+    .box input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    .box input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .box button {
+      background: #00aa00;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      margin-top: 40px;
+      padding: 20px;
+      border-top: 1px solid #ddd;
+    }
+
+    .footer a {
+      color: #0072ce;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="top-bar">
-      <div class="company-name">Brownstone Investments LLC</div>
-      <div class="sign-in">
-        <a href="https://brownstoneinvestments.managebuilding.com/Resident/public/home">Home</a> |
-        <a href="https://brownstoneinvestments.managebuilding.com">Sign in</a>
+
+  <div class="top-bar">
+    <a href="#">Home</a> | <a href="#">Sign in</a>
+  </div>
+
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#">Rentals & Showings</a>
+    <a href="#">Pets & Animals</a>
+    <a href="#">Renter's Insurance</a>
+    <a href="#">Application</a>
+  </div>
+
+  <div class="container">
+    <div class="main-content">
+      <h2>History</h2>
+      <p>Brownstone Investments LLC, warmly known as Brownstone Leasing, has meticulously cultivated a prestigious history that spans three decades...</p>
+      <p>Throughout these years, our unwavering dedication has been to ensure that each tenant receives unparalleled property management services...</p>
+      <p>We take immense pride in our extensive history and the legacy we have built...</p>
+
+      <p class="highlight-red">Would you like to arrange a viewing?<br>
+      Discover your perfect apartment by clicking the “Rentals & Showings” tab on the upper left.</p>
+    </div>
+
+    <div class="sidebar">
+      <div class="box">
+        <h3>Resident Sign In</h3>
+        <input type="text" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <label><input type="checkbox" /> Remember me</label><br>
+        <a href="#">Forgot your password?</a><br><br>
+        <button>SIGN IN</button>
+      </div>
+
+      <div class="box">
+        <h3>Management Sign In</h3>
+        <a href="#">Sign in as a manager</a>
+      </div>
+
+      <div class="box">
+        <h3>Rental Application</h3>
+        <a href="#">Apply online</a>
       </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="https://brownstoneinvestments.managebuilding.com/Resident/public/home">Home</a></li>
-        <li><a href="https://brownstoneinvestments.managebuilding.com/Resident/public/custom/23">Rentals & Showings</a></li>
-        <li><a href="https://brownstoneinvestments.managebuilding.com/Resident/public/custom/22">Pets & Animals</a></li>
-        <li><a href="https://brownstoneinvestments.managebuilding.com/Resident/public/custom/20">Renter's Insurance</a></li>
-        <li><a href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new">Application</a></li>
-      </ul>
-    </nav>
-  </header>
+  </div>
 
-  <main>
-    <div class="container">
-      <section class="history">
-        <h2>History</h2>
-        <p>Brownstone Investments LLC, warmly known as Brownstone Leasing, has meticulously cultivated a prestigious history that spans three decades...</p>
-        <p>Throughout these years, our unwavering dedication has been to ensure that each tenant receives unparalleled property management services...</p>
-        <p>We take immense pride in our extensive history and the legacy we have built...</p>
-        <p class="cta"><strong>Would you like to arrange a viewing?</strong><br>
-        Discover your perfect apartment by clicking the “Rentals & Showings” tab on the upper left...</p>
-      </section>
+  <div class="footer">
+    <p>Brownstone Investments LLC</p>
+    <p><a href="#">privacy</a> | <a href="#">security</a></p>
+    <p>© 2025 Powered by Buildium • Online Property Management • All rights reserved.</p>
+  </div>
 
-      <aside class="sidebar">
-        <div class="box">
-          <h3>Resident Sign In</h3>
-          <label>Email</label>
-          <input type="text" />
-          <label>Password</label>
-          <input type="password" />
-          <div><input type="checkbox" id="remember" /><label for="remember"> Remember me</label></div>
-          <a href="#">Forgot your password?</a><br />
-          <button>SIGN IN</button>
-        </div>
-
-        <div class="box">
-          <h3>Management Sign In</h3>
-          <p><a href="#">Sign in as a manager</a></p>
-        </div>
-
-        <div class="box">
-          <h3>Rental Application</h3>
-          <p><a href="#">Apply online</a></p>
-        </div>
-      </aside>
-    </div>
-  </main>
-
-  <footer>
-    <div>
-      Brownstone Investments LLC<br />
-      <a href="#">privacy</a> | <a href="#">security</a><br />
-      © 2025 Powered by Buildium • Online Property Management • All rights reserved.
-    </div>
-  </footer>
 </body>
 </html>
