@@ -3,153 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brownstone Investments LLC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Resident Center | Brownstone Investments</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #fff;
-      color: #000;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f7f9fa;
+      color: #1f2d3d;
     }
-    .top-bar {
-      background-color: #0074d9;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 14px;
-    }
-    .top-bar a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 10px;
-    }
-    .header {
-      padding: 20px 40px;
-      background-color: #fff;
-      font-weight: bold;
-      font-size: 22px;
-      color: #8c5700;
-    }
-    nav {
-      background-color: #0074d9;
-      display: flex;
-      padding: 0 40px;
-    }
-    nav a {
-      padding: 14px 16px;
-      display: block;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-    }
-    .main {
-      display: flex;
-      padding: 40px;
-    }
-    .left-col {
-      flex: 2;
-      padding-right: 40px;
-    }
-    .right-col {
-      flex: 1;
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      align-items: center;
     }
-    .section-box {
-      border: 1px solid #ccc;
-      padding: 20px;
+
+    .logo {
+      max-width: 200px;
+      margin-bottom: 40px;
     }
-    .section-box input[type="email"],
-    .section-box input[type="password"] {
+
+    .auth-card {
+      background-color: white;
+      border: 1px solid #dce3e8;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+      padding: 32px;
+      max-width: 400px;
       width: 100%;
-      padding: 8px;
-      margin: 4px 0;
     }
-    .section-box button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 8px 16px;
-      border: none;
-      margin-top: 8px;
+
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 24px;
     }
-    .highlight {
-      color: red;
-      font-weight: bold;
+
+    .auth-form label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: #5c6b77;
     }
-    .sub-highlight {
-      color: red;
+
+    .auth-form input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #cbd3da;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .form-links {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+
+    .forgot-password {
       font-size: 13px;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 12px;
-      color: #666;
-      border-top: 1px solid #ccc;
-    }
-    footer a {
-      color: #0074d9;
+      color: #3366cc;
       text-decoration: none;
-      margin: 0 4px;
+    }
+
+    .sign-in-btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #3366cc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .signup-link {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    .signup-link a {
+      color: #3366cc;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 4px;
     }
   </style>
 </head>
 <body>
-  <div class="top-bar">
-    <div></div>
-    <div><a href="#">Home</a> | <a href="#">Sign in</a></div>
-  </div>
-  <div class="header">Brownstone Investments LLC</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Rentals & Showings</a>
-    <a href="#">Pets & Animals</a>
-    <a href="#">Renter's Insurance</a>
-    <a href="#">Application</a>
-  </nav>
-  <div class="main">
-    <div class="left-col">
-      <h2>History</h2>
-      <p>Brownstone Investments LLC, warmly known as Brownstone Leasing, has meticulously cultivated a prestigious history that spans three decades. This history is characterized by the management of a carefully selected collection of historic homes that have been elegantly transformed into premium apartments. These unique properties are ideally situated just west of the highly esteemed Cheesman Park, making them a coveted location for residents seeking both charm and convenience.</p>
-      <p>Throughout these years, our unwavering dedication has been to ensure that each tenant receives unparalleled property management services, fostering a living experience that is second to none. This commitment is deeply rooted in our core values of professionalism, transparency, and exceptional service, which serve as the foundational pillars of our business operations. These principles have not only elevated our standing in the property management industry but have also solidified our reputation as the go-to choice for individuals and families seeking high-quality housing in the dynamic and vibrant community adjacent to Cheesman Park.</p>
-      <p>We take immense pride in our extensive history and the legacy we have built, a testament to our enduring commitment to excellence and our passion for serving our community. As we look to the future, we are filled with enthusiasm for the opportunities that lie ahead, continuing our mission to provide outstanding living experiences, preserve the unique character of our properties, and meet the evolving needs of our residents with unwavering excellence and care.</p>
-      <p class="highlight">Would you like to arrange a viewing?</p>
-      <p class="sub-highlight">Discover your perfect apartment by clicking the "Rentals & Showings" tab on the upper left. There, you'll find a comprehensive list of available units and can easily schedule a showing. Let's find your dream space today!</p>
-    </div>
-    <div class="right-col">
-      <div class="section-box">
-        <strong>Resident Sign In</strong>
-        <form>
-          <label>Email</label>
-          <input type="email">
-          <label>Password</label>
-          <input type="password">
-          <div><input type="checkbox"> Remember me</div>
-          <a href="#">Forgot your password?</a><br>
-          <button>SIGN IN</button>
+  <header class="header">
+    <div class="container">
+      <img src="/assets/logo.svg" alt="Brownstone Logo" class="logo" />
+      <div class="auth-card">
+        <h1 class="title">Sign in to Resident Center</h1>
+        <form class="auth-form">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="you@example.com" required />
+
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password" placeholder="Password" required />
+
+          <div class="form-links">
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="sign-in-btn">Sign In</button>
         </form>
-      </div>
-      <div class="section-box">
-        <strong>Management Sign In</strong>
-        <p>Property managers, rental owners, and vendors</p>
-        <a href="#">Sign in here</a>
-      </div>
-      <div class="section-box">
-        <strong>Rental Application</strong>
-        <p>Interested in one of our properties?</p>
-        <a href="#">Apply online</a>
+
+        <div class="signup-link">
+          <span>Don’t have an account?</span>
+          <a href="#">Sign up</a>
+        </div>
       </div>
     </div>
-  </div>
-  <footer>
-    <strong>Brownstone Investments LLC</strong><br>
-    <a href="#">Home</a><br>
-    <a href="#">privacy</a> | <a href="#">security</a><br>
-    &copy; 2025 Powered by Buildium&reg; &bull; Online Property Management &bull; All rights reserved.
-  </footer>
+  </header>
 </body>
 </html>
