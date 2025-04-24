@@ -1,85 +1,149 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brownstone Investments LLC</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #0071c5;
+      padding: 10px 0;
+      color: white;
+      font-size: 14px;
+    }
+    .top-links {
+      text-align: right;
+      padding: 0 20px;
+      font-size: 13px;
+    }
+    .top-links a {
+      color: #0071c5;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    nav {
+      background-color: #0071c5;
+      display: flex;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 30px;
+      font-weight: bold;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 60px 0 60px;
+    }
+    .left-section {
+      width: 65%;
+    }
+    .right-section {
+      width: 30%;
+    }
+    .box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .box h3 {
+      margin-top: 0;
+    }
+    .box input[type="text"],
+    .box input[type="password"] {
+      width: 100%;
+      padding: 6px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+    .box .submit-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .box .links {
+      font-size: 12px;
+    }
+    .footer {
+      border-top: 1px solid #ccc;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 12px;
+    }
+    .footer a {
+      margin: 0 10px;
+    }
+    .callout {
+      color: red;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .callout-desc {
+      color: red;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
+  <div class="top-links">
+    <a href="#">Home</a> | <a href="#">Sign in</a>
+  </div>
   <header>
-    <div class="top-links">
-      <a href="#">Home</a> | <a href="#">Sign in</a>
-    </div>
-    <div class="nav-bar">
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Rentals & Showings</a>
-        <a href="#">Pets & Animals</a>
-        <a href="#">Renter's Insurance</a>
-        <a href="#">Application <span class="external-icon">↗</span></a>
-      </nav>
-    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Rentals & Showings</a>
+      <a href="#">Pets & Animals</a>
+      <a href="#">Renter’s Insurance</a>
+      <a href="#">Application</a>
+    </nav>
   </header>
-
-  <main>
-    <div class="container">
-      <div class="left-column">
-        <h2>History</h2>
-        <p>
-          Brownstone Investments LLC, warmly known as Brownstone Leasing, has meticulously cultivated a prestigious history that spans three decades. This history is characterized by the management of a carefully selected collection of historic homes that have been elegantly transformed into premium apartments. These unique properties are ideally situated just west of the highly esteemed Cheesman Park, making them a coveted location for residents seeking both charm and convenience.
-        </p>
-        <p>
-          Throughout these years, our unwavering dedication has been to ensure that each tenant receives unparalleled property management services, fostering a living experience that is second to none. This commitment is deeply rooted in our core values of professionalism, transparency, and exceptional service, which serve as the foundational pillars of our business operations. These principles have not only elevated our standing in the property management industry but have also solidified our reputation as the go-to choice for individuals and families seeking high-quality housing in the dynamic and vibrant community adjacent to Cheesman Park.
-        </p>
-        <p>
-          We take immense pride in our extensive history and the legacy we have built.
-        </p>
-        <p class="highlight">
-          Would you like to arrange a viewing?<br />
-          <span>Discover your perfect apartment by clicking the "Rentals & Showings" tab on the upper left.</span>
-        </p>
+  <div class="container">
+    <div class="left-section">
+      <h2>History</h2>
+      <p>Brownstone Investments LLC, warmly known as Brownstone Leasing, has meticulously cultivated a prestigious history that spans three decades. This history is characterized by the management of a carefully selected collection of historic homes that have been elegantly transformed into premium apartments. These unique properties are ideally situated just west of the highly esteemed Cheesman Park, making them a coveted location for residents seeking both charm and convenience.</p>
+      <p>Throughout these years, our unwavering dedication has been to ensure that each tenant receives unparalleled property management services, fostering a living experience that is second to none. This commitment is deeply rooted in our core values of professionalism, transparency, and exceptional service, which serve as the foundational pillars of our business operations. These principles have not only elevated our standing in the property management industry but have also solidified our reputation as the go-to choice for individuals and families seeking high-quality housing in the dynamic and vibrant community adjacent to Cheesman Park.</p>
+      <p>We take immense pride in our extensive history and the legacy we have built.</p>
+      <p class="callout">Would you like to arrange a viewing?</p>
+      <p class="callout-desc">Discover your perfect apartment by clicking the “Rentals & Showings” tab on the upper left. There, you’ll find a comprehensive list of available units and can easily schedule a showing. Let’s find your dream space today!</p>
+    </div>
+    <div class="right-section">
+      <div class="box">
+        <h3>Resident Sign In</h3>
+        <label>Email</label>
+        <input type="text" placeholder="Email">
+        <label>Password</label>
+        <input type="password" placeholder="Password">
+        <div><input type="checkbox"> Remember me</div>
+        <div class="links"><a href="#">Forgot your password?</a></div>
+        <button class="submit-btn">SIGN IN</button>
       </div>
-
-      <div class="right-column">
-        <div class="box">
-          <h3>Resident Sign In</h3>
-          <label>Email</label>
-          <input type="email" placeholder="Email" />
-          <label>Password</label>
-          <input type="password" placeholder="Password" />
-          <div class="extras">
-            <label><input type="checkbox" /> Remember me</label>
-            <a href="#">Forgot your password?</a>
-          </div>
-          <button>SIGN IN</button>
-        </div>
-
-        <div class="box">
-          <h3>Management Sign In</h3>
-          <p>Property managers, rental owners, and vendors</p>
-          <a href="#">Sign in here</a>
-        </div>
-
-        <div class="box">
-          <h3>Rental Application</h3>
-          <p>Interested in one of our properties?</p>
-          <a href="#">Apply online</a>
-        </div>
+      <div class="box">
+        <h3>Management Sign In</h3>
+        <p>Property managers, rental owners, and vendors</p>
+        <a href="#">Sign in here</a>
+      </div>
+      <div class="box">
+        <h3>Rental Application</h3>
+        <p>Interested in one of our properties?</p>
+        <a href="#">Apply online</a>
       </div>
     </div>
-  </main>
-
-  <footer>
-    <div class="footer-links">
-      <strong>Brownstone Investments LLC</strong><br />
-      <a href="#">Home</a><br />
-      <a href="#">privacy</a> | <a href="#">security</a><br />
-      <small>
-        &copy; 2025 Powered by Buildium&reg; &bull; Online Property Management &bull; All rights reserved.
-      </small>
-    </div>
-  </footer>
+  </div>
+  <div class="footer">
+    <strong>Brownstone Investments LLC</strong><br>
+    <a href="#">Home</a><br>
+    <a href="#">privacy</a> | <a href="#">security</a><br>
+    © 2025 Powered by Buildium® • Online Property Management • All rights reserved.
+  </div>
 </body>
 </html>
