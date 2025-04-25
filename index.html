@@ -5,148 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brownstone Investments LLC</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #fff;
-      color: #333;
-      line-height: 1.6;
-    }
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background: #fff;
-      border-bottom: 1px solid #ccc;
-    }
-    .branding {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #914d00;
-    }
-    .top-links a {
-      color: #0074d9;
-      text-decoration: none;
-      margin-left: 0.5rem;
-      font-size: 0.85rem;
-    }
-    .main-nav {
-      display: flex;
-      background: #4a90e2;
-      justify-content: center;
-      border-bottom: 1px solid #ccc;
-    }
-    .main-nav a {
-      color: white;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 0.95rem;
-      border-right: 1px solid rgba(255,255,255,0.5);
-    }
-    .main-nav a:last-child {
-      border-right: none;
-    }
-    .container {
-      display: flex;
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 2rem;
-    }
-    .main-content {
-      flex: 2;
-      margin-right: 2rem;
-    }
-    .main-content h2 {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-    .main-content p {
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
-    }
-    .highlight {
-      background: #fff8dc;
-      border-left: 4px solid #ffa500;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    .highlight h3 {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    .sidebar {
-      flex: 1;
-    }
-    .signin-box {
-      background: #f5f5f5;
-      padding: 1rem;
-      border: 1px solid #ccc;
-      margin-bottom: 2rem;
-    }
-    .signin-box h3 {
-      font-size: 1rem;
-      margin-bottom: 0.75rem;
-    }
-    .signin-box input {
-      width: 100%;
-      padding: 0.5rem;
-      margin-bottom: 0.75rem;
-      border: 1px solid #ccc;
-    }
-    .signin-box button {
-      width: 100%;
-      padding: 0.75rem;
-      background: #4a90e2;
-      color: #fff;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-    }
-    .info-box {
-      margin-bottom: 1.5rem;
-    }
-    .info-box h4 {
-      font-size: 0.9rem;
-      margin-bottom: 0.25rem;
-    }
-    .info-box a {
-      font-size: 0.85rem;
-      color: #0074d9;
-      text-decoration: none;
-    }
-    .footer {
-      background-color: #f5f8fa;
-      padding: 1.5rem;
-      text-align: center;
-      border-top: 1px solid #ccc;
-    }
-    .footer-brand {
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-    .footer-links a {
-      margin: 0 0.5rem;
-      font-size: 0.85rem;
-      color: #0074d9;
-      text-decoration: none;
-    }
-    .legal {
-      font-size: 0.75rem;
-      color: #666;
-      margin-top: 0.5rem;
-    }
-  </style>
 </head>
 <body>
   <header class="header">
-    <div class="branding">Brownstone Investments LLC</div>
+    <div class="branding">
+      <a href="#">Brownstone Investments LLC</a>
+    </div>
     <div class="top-links">
       <a href="#">Home</a> | <a href="#">Sign in</a>
     </div>
@@ -157,36 +21,47 @@
     <a href="#">Rentals & Showings</a>
     <a href="#">Pets & Animals</a>
     <a href="#">Renter’s Insurance</a>
-    <a href="#">Application ↗</a>
+    <a href="#" target="_blank">Application ↗</a>
   </nav>
 
-  <main class="container">
-    <section class="main-content">
+  <main class="main-container">
+    <section class="content-main">
       <h2>History</h2>
-      <p>Brownstone Investments LLC, warmly known as Brownstone Leasing, has meticulously cultivated a prestigious history...</p>
-      <p>Throughout these years, our unwavering dedication has been to ensure that each tenant receives unparalleled property management services...</p>
-      <p>We take immense pride in our extensive history and the legacy we have built...</p>
+      <p>
+        Brownstone Investments LLC, warmly known as Brownstone Leasing, has meticulously cultivated a prestigious history that spans three decades...
+      </p>
+      <p>
+        Throughout these years, our unwavering dedication has been...
+      </p>
+      <p>
+        We take immense pride in our extensive history...
+      </p>
+
       <div class="highlight">
         <h3>Would you like to arrange a viewing?</h3>
-        <p>Discover your perfect apartment by clicking the “Rentals & Showings” tab on the upper left...</p>
+        <p>
+          Discover your perfect apartment by clicking the “Rentals & Showings” tab on the upper left.
+          There, you’ll find a comprehensive list of available units and can easily schedule a showing.
+          Let’s find your dream space today!
+        </p>
       </div>
     </section>
 
     <aside class="sidebar">
-      <div class="signin-box">
+      <div class="signin-panel">
         <h3>Resident Sign In</h3>
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
+        <label>Email <input type="email" placeholder="Email" /></label>
+        <label>Password <input type="password" placeholder="Password" /></label>
         <button>SIGN IN</button>
       </div>
 
-      <div class="info-box">
+      <div class="sidebar-section">
         <h4>Management Sign In</h4>
         <p>Property managers, rental owners, and vendors</p>
         <a href="#">Sign in here</a>
       </div>
 
-      <div class="info-box">
+      <div class="sidebar-section">
         <h4>Rental Application</h4>
         <p>Interested in one of our properties?</p>
         <a href="#">Apply online</a>
@@ -195,13 +70,17 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-brand">Brownstone Investments LLC</div>
-    <div class="footer-links">
-      <a href="#">Home</a> | <a href="#">Privacy</a> | <a href="#">Security</a>
+    <div class="footer-top">
+      <h2>Brownstone Investments LLC</h2>
+      <nav class="footer-nav">
+        <a href="#">Home</a> |
+        <a href="#">Privacy</a> |
+        <a href="#">Security</a>
+      </nav>
     </div>
-    <div class="legal">
-      &copy; 2025 Powered by <a href="#">Buildium&reg;</a> • Online Property Management
-    </div>
+    <p class="legal">
+      © 2025 Powered by <a href="#">Buildium®</a> • Online Property Management
+    </p>
   </footer>
 </body>
 </html>
