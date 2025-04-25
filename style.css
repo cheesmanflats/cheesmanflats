@@ -1,94 +1,17 @@
-/* ────────────────────────────────────────────────────────────────
-   Cheesman Flats  –  site stylesheet
-   (Buildium-blue theme + tiny tweaks to mirror Rentals & Showings)
-   ──────────────────────────────────────────────────────────────── */
+/* =======================================================
+   ⬇️  Only project-specific tweaks go here.  Keep it light.
+   ======================================================= */
 
-/* palette */
-:root{
-  --bs-primary:#2f80d0;   /* Buildium blue */
-  --bs-primary-dark:#1060ad;
+/* 1. Logo size (desktop) */
+.header__branding-logo{
+  height:48px;          /* adjust if you prefer bigger/smaller */
 }
 
-/* base ---------------------------------------------------------- */
-body{
-  margin:0;                              /* flush with viewport */
-  font-family:"Helvetica Neue", Arial, sans-serif;
+/* 2. Thin grey line above the footer, plus a little padding */
+footer.footer{
+  border-top:1px solid #d7d7d7;
+  padding:20px 0;
 }
 
-/* ─── top bar (logo + tiny links) ─────────────────────────────── */
-.top-bar{
-  background:#fff;
-  padding:.5rem 0;
-  font-size:.875rem;
-  display:flex;                          /* keep logo + links inline */
-  justify-content:space-between;
-  align-items:center;
-}
-.top-bar a{
-  color:#0d6efd;
-  text-decoration:none;
-  margin-left:.25rem;
-}
-
-/* ─── main nav strip ──────────────────────────────────────────── */
-#main-nav{
-  background:var(--bs-primary);
-}
-/* let the bar span full width even though the page is narrow */
-#main-nav .container-narrow{
-  max-width:none;                        /* override 900-px cap */
-  padding:0;
-}
-
-#main-nav a{
-  color:#fff;
-  font-weight:600;
-  text-decoration:none;
-  padding:.75rem 1.25rem;
-  display:inline-block;
-  border-bottom:3px solid transparent;   /* 1 px white gap top+bottom */
-  line-height:1.15;
-}
-#main-nav a:hover,
-#main-nav a:focus{
-  background:var(--bs-primary-dark);
-}
-#main-nav a.active{                     /* mimic Buildium “current tab” */
-  background:#fff;
-  color:var(--bs-primary-dark);
-  border-bottom-color:var(--bs-primary-dark);
-}
-
-/* ─── page container (keeps content narrow) ───────────────────── */
-.container-narrow{
-  max-width:900px;
-  margin:auto;
-  padding:2rem 1rem;
-}
-
-/* ─── CTA button (Tenant Turner link) ─────────────────────────── */
-.btn-tt{
-  font-size:1.25rem;
-  padding:.75rem 1.5rem;
-  border:3px solid var(--bs-primary-dark);
-  border-radius:6px;
-  background:var(--bs-primary);
-  color:#fff;
-  display:inline-block;
-  text-decoration:none;
-  text-align:center;
-}
-.btn-tt:hover,
-.btn-tt:focus{
-  background:var(--bs-primary-dark);
-}
-
-/* ─── footer ──────────────────────────────────────────────────── */
-footer{
-  border-top:2px solid #ddd;
-  margin-top:3rem;
-  padding:1rem 0;
-  font-size:.875rem;
-  color:#555;
-  text-align:left;
-}
+/* 3. Optional: bump default body font size a hair (optional) */
+/* body{font-size:15px} */
