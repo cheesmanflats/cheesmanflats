@@ -1,68 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Cheesman Flats | Rentals & Showings</title>
+/* ------------------------------------------------------------------ */
+/*  RESET / GLOBAL                                                    */
+/* ------------------------------------------------------------------ */
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+}
 
-  <!-- mobile / zoom -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+html,body{
+  margin:0;
+  padding:0;
+  font-family:Arial, sans-serif;
+  line-height:1.4;
+  color:#000;
+  background:#fff;
+}
 
-  <!-- one single stylesheet in the repo root -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+.content-container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 1rem;
+}
 
-  <!-- ──────────────────── HEADER  (logo + nav bar) ─────────────────── -->
-  <header class="site-header">
-    <div class="site-header__inner">
+/* ------------------------------------------------------------------ */
+/*  HEADER  (logo + nav bar)                                          */
+/* ------------------------------------------------------------------ */
+.site-header{
+  background:#fff;
+  padding:15px 0 5px;       /* 15px top, 5px bottom (gives a gap before blue bar) */
+  border-bottom:1px solid #e5e5e5;
+}
 
-      <!-- logo -->
-      <a href="index.html" class="site-header__logo-link">
-        <img src="assets/bs-logo.png" class="site-header__logo" alt="Brownstone Leasing">
-      </a>
+.site-header__inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 1rem;
+  display:flex;
+  align-items:center;
+}
 
-      <!-- top nav -->
-      <nav id="navbar-main" class="site-nav">
-        <a class="site-nav__link is-active" href="index.html">Rentals & Showings</a>
-        <a class="site-nav__link"            href="pets.html">Pets & Animals</a>
-        <a class="site-nav__link"            href="insurance.html">Renter’s Insurance</a>
-        <a class="site-nav__link"            href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new" target="_blank" rel="noopener">
-          Application <span class="svgicon--externallink site-nav__ext"></span>
-        </a>
-      </nav>
+.site-header__logo{
+  height:48px;
+}
 
-    </div>
-  </header>
+.site-header__logo-link{
+  display:inline-block;
+  margin-right:40px;
+}
 
-  <!-- ───────────────────────  MAIN CONTENT  ────────────────────────── -->
-  <main class="content-container">
+/* nav */
+.site-nav{
+  display:flex;
+  flex-wrap:wrap;           /* just in case window gets super-narrow */
+}
 
-    <h3>Exemption Compliance with House Bill 23-1099: Application Fee and PTSR Policies</h3>
+/* old-Safari-proof spacing: every link after the first gets margin-left */
+.site-nav__link + .site-nav__link{
+  margin-left:40px;
+}
 
-    <p>“In accordance with House Bill 23-1099, Brownstone Investments LLC and the landlords we represent are exempt from
-    the requirements of subsections (1.5)(a)–(1.5)(e). This exemption applies because we charge only one application fee
-    for applicants who will be co-habitating and refund this fee if the lease is not signed. Therefore, we do not require
-    Portable Tenant Screening Reports (PTSR) from prospective tenants, as per the exemption criteria outlined in
-    subsection (1.5)(f).”</p>
+.site-nav__link{
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+  white-space:nowrap;
+}
 
-    <p>Please click on the button below to view our available apartments and schedule showings at your convenience.</p>
+.site-nav__link:hover,
+.site-nav__link:focus{
+  text-decoration:underline;
+}
 
-    <div class="button-container">
-      <a class="GFG" href="https://app.tenantturner.com/listings/brownstoneinvestments" target="_blank" rel="noopener">
-        View & Schedule Showing
-      </a>
-    </div>
+.site-nav__link.is-active{
+  text-decoration:underline;
+}
 
-  </main>
+/* ------------------------------------------------------------------ */
+/*  BLUE BAR BEHIND NAV                                               */
+/* ------------------------------------------------------------------ */
+#navbar-main{
+  background:#0a5fa7;
+  padding:12px 0;
+}
 
-  <!-- ──────────────────────────  FOOTER  ───────────────────────────── -->
-  <footer class="site-footer">
-    © <span id="year"></span> Cheesman Flats • All rights reserved
-  </footer>
+/* ------------------------------------------------------------------ */
+/*  PRIMARY CALL-TO-ACTION BUTTON                                     */
+/* ------------------------------------------------------------------ */
+.GFG{
+  background:#5281be;
+  transition:.3s;
+  border:4px solid red;
+  border-radius:10px;
+  color:#fff;
+  padding:10px 20px;
+  text-align:center;
+  display:inline-block;
+  font-size:20px;
+  margin:25px 0;
+  cursor:pointer;
+  text-decoration:none;
+}
 
-  <script>
-    /* show current year automatically */
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+.GFG:hover{
+  background:#3e6daa;
+  box-shadow:0 10px 15px rgba(0,0,0,.4);
+}
+
+/* ------------------------------------------------------------------ */
+/*  FOOTER                                                            */
+/* ------------------------------------------------------------------ */
+.site-footer{
+  border-top:1px solid #d7d7d7;
+  padding:20px 1rem;
+  font-size:14px;
+  text-align:left;
+  max-width:1100px;
+  margin:60px auto 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/*  SMALL RE-USED BITS                                                */
+/* ------------------------------------------------------------------ */
+sup{
+  vertical-align:super;
+  font-size:.5em;
+  line-height:0;
+}
+
+.blue-items{
+  list-style-position:outside;
+  padding-left:20px;
+}
+
+.blue-items li{
+  color:#5281be;
+  text-indent:-13px;
+  margin-left:20px;
+}
+
+.button-container{
+  text-align:center;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* ------------------------------------------------------------------ */
+/*  MOBILE                                                            */
+/* ------------------------------------------------------------------ */
+@media (max-width:640px){
+  .site-nav__link + .site-nav__link{margin-left:20px}
+  .site-nav__link{font-size:14px}
+}
