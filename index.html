@@ -1,89 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cheesman Flats | Rentals &amp; Showings</title>
 
-  <title>Rentals & Showings | Cheesman Flats</title>
-
-  <!-- your main stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- extra rules used only by the compliance/button block -->
-  <style>
-    .GFG{
-      background:#5281be;
-      border:4px solid #c00;
-      border-radius:10px;
-      color:#fff;
-      padding:10px 20px;
-      font-size:20px;
-      display:inline-block;
-      text-decoration:none;
-      transition:.7s;
-      cursor:pointer
-    }
-    .GFG:hover{
-      background:#3e6daa;
-      box-shadow:0 10px 15px rgba(0,0,0,.4)
-    }
-    sup{vertical-align:super;font-size:.5em;line-height:0}
-    .blue-items{list-style-position:outside;padding-left:20px}
-    .blue-items li{color:#5281be;text-indent:-13px;margin-left:20px}
-    .button-container{text-align:center;margin:30px 0}
-  </style>
+  <!-- 🔗 Point to the stylesheet that’s already in your repo -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- ======= NAV BAR (shows on every page) ======= -->
+  <!-- ░░ TOP NAV ░░ -------------------------------------------------- -->
   <nav id="navbar-main" class="public-site-nav main-nav-bg-color hide--mobile">
     <div class="public-site-nav__container">
       <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
-        <!-- NOTE: Rentals & Showings IS the landing page, so it links to "/" -->
-        <a class="public-site-nav__item public-site-nav__link-text" href="/">Rentals & Showings</a>
+        <!-- 👇 THIS is the landing page -->
+        <a class="public-site-nav__item public-site-nav__link-text" href="index.html">Rentals &amp; Showings</a>
       </div>
       <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
-        <a class="public-site-nav__item public-site-nav__link-text" href="pets-animals.html">Pets & Animals</a>
+        <a class="public-site-nav__item public-site-nav__link-text" href="pets.html">Pets &amp; Animals</a>
       </div>
       <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
-        <a class="public-site-nav__item public-site-nav__link-text" href="renters-insurance.html">Renter’s Insurance</a>
+        <a class="public-site-nav__item public-site-nav__link-text" href="insurance.html">Renter’s Insurance</a>
       </div>
       <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
-        <a class="public-site-nav__item public-site-nav__link-text" target="_blank"
-           href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new">
+        <a class="public-site-nav__item public-site-nav__link-text" href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new" target="_blank" rel="noopener">
           Application <span class="public-site-nav__icon--apply-now svgicon--externallink"></span>
         </a>
       </div>
     </div>
   </nav>
-  <!-- ======= /NAV BAR ======= -->
 
+  <!-- ░░ MAIN CONTENT ░░ ---------------------------------------------- -->
   <main class="content-container">
-    <div class="content">
 
-      <h3>Exemption Compliance with House Bill 23-1099: Application Fee and PTSR Policies</h3>
+    <h3>Exemption Compliance with House Bill 23‑1099: Application Fee and PTSR Policies</h3>
 
-      <p>
-        “In accordance with House Bill 23-1099, Brownstone Investments LLC and the landlords we represent are exempt
-        from the requirements of subsections (1.5)(a)–(1.5)(e). This exemption applies because we charge only one
-        application fee for applicants who will be cohabitating and refund this fee if the lease is not signed.<br />
-        Therefore, we do <strong>not</strong> require Portable Tenant Screening Reports (PTSR) from prospective tenants,
-        as per the exemption criteria outlined in subsection (1.5)(f).”
-      </p>
+    <p>“In accordance with House Bill 23‑1099, Brownstone Investments LLC and the landlords we represent are exempt from the requirements of subsections (1.5)(a)‑(1.5)(e). This exemption applies because we charge only one application fee for applicants who will be co‑habitating and refund this fee if the lease is not signed. Therefore, we do not require Portable Tenant Screening Reports (PTSR) from prospective tenants, as per the exemption criteria outlined in subsection (1.5)(f).”</p>
 
-      <p><em>Please click on the link below to view our available apartments and schedule showings at your convenience.</em></p>
+    <p>Please click on the button below to view our available apartments and schedule showings at your convenience.</p>
 
-      <div class="button-container">
-        <a class="GFG"
-           href="https://app.tenantturner.com/listings/brownstoneinvestments"
-           target="_blank" rel="noopener">
-          View & Schedule Showing
-        </a>
-      </div>
+    <div class="button-container">
+      <a href="https://app.tenantturner.com/listings/brownstoneinvestments" class="GFG" target="_blank" rel="noopener">View &amp; Schedule Showing</a>
+    </div>
 
-    </div><!-- /.content -->
   </main>
 
+  <!-- ░░ FOOTER ░░ ---------------------------------------------------- -->
+  <footer class="footer">
+    <div class="content-container">
+      &copy; <span id="year"></span> Cheesman Flats • All rights reserved
+    </div>
+  </footer>
+
+  <script>
+    /* Automatically show current year in footer */
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
