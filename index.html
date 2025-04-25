@@ -1,61 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cheesman Flats | Rentals &amp; Showings</title>
+  <meta charset="UTF-8">
+  <title>Rentals & Showings | Cheesman Flats</title>
 
-  <!-- 🔗 Point to the stylesheet that’s already in your repo -->
+  <!-- Pull in the one CSS file that’s already in your repo root -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Mobile viewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
 
-  <!-- ░░ TOP NAV ░░ -------------------------------------------------- -->
+  <!-- ───────────────── Top navigation bar ───────────────── -->
   <nav id="navbar-main" class="public-site-nav main-nav-bg-color hide--mobile">
     <div class="public-site-nav__container">
-      <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
-        <!-- 👇 THIS is the landing page -->
-        <a class="public-site-nav__item public-site-nav__link-text" href="index.html">Rentals &amp; Showings</a>
+      <div class="public-site-nav__item-container">
+        <a class="public-site-nav__item public-site-nav__link-text" href="index.html">Rentals & Showings</a>
       </div>
-      <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
-        <a class="public-site-nav__item public-site-nav__link-text" href="pets.html">Pets &amp; Animals</a>
+      <div class="public-site-nav__item-container">
+        <a class="public-site-nav__item public-site-nav__link-text" href="#pets">Pets & Animals</a>
       </div>
-      <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
-        <a class="public-site-nav__item public-site-nav__link-text" href="insurance.html">Renter’s Insurance</a>
+      <div class="public-site-nav__item-container">
+        <a class="public-site-nav__item public-site-nav__link-text" href="#insurance">Renter’s Insurance</a>
       </div>
-      <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
-        <a class="public-site-nav__item public-site-nav__link-text" href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new" target="_blank" rel="noopener">
+      <div class="public-site-nav__item-container">
+        <a class="public-site-nav__item public-site-nav__link-text"
+           href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new" target="_blank">
           Application <span class="public-site-nav__icon--apply-now svgicon--externallink"></span>
         </a>
       </div>
     </div>
   </nav>
 
-  <!-- ░░ MAIN CONTENT ░░ ---------------------------------------------- -->
   <main class="content-container">
+    <h3>Exemption Compliance with House Bill 23-1099: Application Fee and PTSR Policies</h3>
 
-    <h3>Exemption Compliance with House Bill 23‑1099: Application Fee and PTSR Policies</h3>
-
-    <p>“In accordance with House Bill 23‑1099, Brownstone Investments LLC and the landlords we represent are exempt from the requirements of subsections (1.5)(a)‑(1.5)(e). This exemption applies because we charge only one application fee for applicants who will be co‑habitating and refund this fee if the lease is not signed. Therefore, we do not require Portable Tenant Screening Reports (PTSR) from prospective tenants, as per the exemption criteria outlined in subsection (1.5)(f).”</p>
+    <p>“In accordance with House Bill 23-1099, Brownstone Investments LLC and the landlords we represent are exempt from
+    the requirements of subsections (1.5)(a)–(1.5)(e). This exemption applies because we charge only one application
+    fee for applicants who will be co-habitating and refund this fee if the lease is not signed. Therefore, we do not
+    require Portable Tenant Screening Reports (PTSR) from prospective tenants, as per the exemption criteria outlined
+    in subsection (1.5)(f).”</p>
 
     <p>Please click on the button below to view our available apartments and schedule showings at your convenience.</p>
 
     <div class="button-container">
-      <a href="https://app.tenantturner.com/listings/brownstoneinvestments" class="GFG" target="_blank" rel="noopener">View &amp; Schedule Showing</a>
+      <a href="https://app.tenantturner.com/listings/brownstoneinvestments" class="GFG" target="_blank">
+        View & Schedule Showing
+      </a>
     </div>
-
   </main>
 
-  <!-- ░░ FOOTER ░░ ---------------------------------------------------- -->
-  <footer class="footer">
-    <div class="content-container">
-      &copy; <span id="year"></span> Cheesman Flats • All rights reserved
-    </div>
+  <footer class="footer content-container">
+    © 2025 Cheesman Flats • All rights reserved
   </footer>
 
-  <script>
-    /* Automatically show current year in footer */
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
