@@ -1,0 +1,82 @@
+/* ------------- brand colour ------------- */
+:root{
+  --bs-primary:#2f80d0;          /* Buildium blue */
+}
+
+/* ----------- basic typography ---------- */
+body{
+  margin:0;
+  font-family:"Helvetica Neue", Arial, sans-serif;
+}
+
+/* ----------- top bar (tiny links) ------- */
+.top-bar{
+  background:#fff;
+  padding:.5rem 0;
+  font-size:.875rem;
+}
+.top-bar a{
+  color:#0d6efd;
+  text-decoration:none;
+  margin-left:.25rem;
+}
+
+/* ----------- main nav strip ------------- */
+#main-nav{
+  background:var(--bs-primary);
+}
+#main-nav .wrap{
+  max-width:900px;
+  margin:0 auto;
+}
+#main-nav a{
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+  padding:.9rem 1.25rem;
+  display:inline-block;
+}
+#main-nav a:hover,
+#main-nav a.active{
+  background:#1060ad;
+}
+
+/* ----------- layout width --------------- */
+.container-narrow{
+  max-width:900px;
+  margin:auto;
+  padding:2rem 1rem;
+}
+
+/* ----------- big TenantTurner button ---- */
+.btn-tt{
+  font-size:1.15rem;
+  padding:.65rem 1.3rem;
+  border:2px solid #1060ad;
+  border-radius:4px;
+  background:var(--bs-primary);
+  color:#fff;
+  cursor:pointer;
+}
+.btn-tt:hover{
+  background:#1060ad;
+}
+
+/* ----------- footer --------------------- */
+footer{
+  border-top:2px solid #ddd;
+  margin-top:3rem;
+  padding:1rem 0;
+  font-size:.875rem;
+  color:#555;
+  text-align:left;
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* ----------- utilities ------------------ */
+.logo{
+  max-width:260px;
+  height:auto;
+}
