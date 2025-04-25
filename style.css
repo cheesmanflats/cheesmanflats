@@ -27,7 +27,7 @@ html,body{
 /* ------------------------------------------------------------------ */
 .site-header{
   background:#fff;
-  padding:15px 0 5px;       /* 15px top, 5px bottom (gives a gap before blue bar) */
+  padding:15px 0 5px;            /* top gap keeps logo from hugging blue bar */
   border-bottom:1px solid #e5e5e5;
 }
 
@@ -41,6 +41,7 @@ html,body{
 
 .site-header__logo{
   height:48px;
+  width:auto;                    /* keep aspect-ratio if a very tall logo arrives */
 }
 
 .site-header__logo-link{
@@ -48,18 +49,18 @@ html,body{
   margin-right:40px;
 }
 
-/* nav */
+/*  ───── nav ─────  */
 .site-nav{
   display:flex;
-  flex-wrap:wrap;           /* just in case window gets super-narrow */
+  flex-wrap:wrap;
+  gap:40px;                      /* modern browsers */
 }
 
-/* old-Safari-proof spacing: every link after the first gets margin-left */
-.site-nav__link + .site-nav__link{
-  margin-left:40px;
-}
+/* old-Safari fallback spacing */
+.site-nav__link + .site-nav__link{margin-left:40px;}
 
 .site-nav__link{
+  display:block;                 /* helps wrapping on very narrow screens */
   color:#fff;
   font-weight:600;
   text-decoration:none;
@@ -67,10 +68,7 @@ html,body{
 }
 
 .site-nav__link:hover,
-.site-nav__link:focus{
-  text-decoration:underline;
-}
-
+.site-nav__link:focus,
 .site-nav__link.is-active{
   text-decoration:underline;
 }
@@ -89,7 +87,7 @@ html,body{
 .GFG{
   background:#5281be;
   transition:.3s;
-  border:4px solid red;
+  border:4px solid transparent;  /* was red for debugging */
   border-radius:10px;
   color:#fff;
   padding:10px 20px;
@@ -151,6 +149,6 @@ img{
 /*  MOBILE                                                            */
 /* ------------------------------------------------------------------ */
 @media (max-width:640px){
-  .site-nav__link + .site-nav__link{margin-left:20px}
-  .site-nav__link{font-size:14px}
+  .site-nav__link + .site-nav__link{margin-left:20px;}
+  .site-nav__link{font-size:14px;}
 }
