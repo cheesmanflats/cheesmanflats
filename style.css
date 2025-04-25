@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------ */
-/*  Global reset / base                                               */
+/*  RESET / GLOBAL                                                    */
 /* ------------------------------------------------------------------ */
 *,
 *::before,
@@ -16,51 +16,67 @@ html,body{
   background:#fff;
 }
 
-/* Keep the main content from hugging the edges on big screens */
-.content-container,
-.public-site-nav__container{
+/* keep page from hugging edges on large screens */
+.content-container{
   max-width:1100px;
   margin:0 auto;
   padding:0 1rem;
 }
 
 /* ------------------------------------------------------------------ */
-/*  Top navigation bar                                                */
+/*  HEADER  (logo + horizontal nav)                                   */
 /* ------------------------------------------------------------------ */
-#navbar-main{
+.site-header{
   background:#0a5fa7;          /* blue bar */
-  padding:12px 0;
+  padding:10px 0;
 }
 
-#navbar-main .public-site-nav__item-container{
+.site-header__inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 1rem;
+  display:flex;
+  align-items:center;
+}
+
+.site-header__logo{
+  height:48px;                 /* change if you want a different size */
+}
+
+.site-header__logo-link{
   display:inline-block;
-  margin-right:40px;           /* space between links */
+  margin-right:40px;           /* space before nav links start */
 }
 
-#navbar-main a{
+/* nav links */
+.site-nav{
+  display:flex;
+  gap:40px;                    /* space between links */
+}
+
+.site-nav__link{
   color:#fff;
   font-weight:600;
   text-decoration:none;
+  white-space:nowrap;
 }
 
-#navbar-main a:hover,
-#navbar-main a:focus{
+.site-nav__link:hover,
+.site-nav__link:focus{
   text-decoration:underline;
 }
 
-/* Hide / show helpers pulled from the original template */
-@media (max-width:640px){
-  .hide--mobile{display:none!important;}
-  .display--mobile-only{display:block!important;}
+.site-nav__link.is-active{
+  text-decoration:underline;
 }
 
 /* ------------------------------------------------------------------ */
-/*  Primary blue call-to-action button                                */
+/*  PRIMARY CALL-TO-ACTION BUTTON                                     */
 /* ------------------------------------------------------------------ */
 .GFG{
   background:#5281be;
   transition:.3s;
-  border:4px solid red;
+  border:4px solid red;        /* 👈 tweak / remove as you like */
   border-radius:10px;
   color:#fff;
   padding:10px 20px;
@@ -75,11 +91,22 @@ html,body{
 .GFG:hover{
   background:#3e6daa;
   box-shadow:0 10px 15px rgba(0,0,0,.4);
-  text-decoration:none;
 }
 
 /* ------------------------------------------------------------------ */
-/*  Misc elements pulled from your earlier CSS                        */
+/*  FOOTER                                                            */
+/* ------------------------------------------------------------------ */
+.site-footer{
+  border-top:1px solid #d7d7d7;
+  padding:20px 1rem;
+  font-size:14px;
+  text-align:left;
+  max-width:1100px;
+  margin:60px auto 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/*  SMALL RE-USED BITS FROM EARLIER CSS                               */
 /* ------------------------------------------------------------------ */
 sup{
   vertical-align:super;
@@ -102,8 +129,15 @@ sup{
   text-align:center;
 }
 
-/* Make images responsive by default */
+/* images responsive by default */
 img{
   max-width:100%;
   height:auto;
+}
+
+/* ------------------------------------------------------------------ */
+/*  MOBILE: hide desktop nav bar if you later add a hamburger menu    */
+/* ------------------------------------------------------------------ */
+@media (max-width:640px){
+  .site-nav{gap:20px;font-size:14px}
 }
