@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="noindex, nofollow"/>
   <title>Brownstone Investments LLC</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- This must exactly match the filename below -->
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
   <header class="header">
     <h1 class="branding">
-      <a href="/Resident/public/home" onclick="return confirmRedirect(this.href)">
-        Brownstone Investments LLC
-      </a>
+      <a href="/Resident/public/home">Brownstone Investments LLC</a>
     </h1>
     <div class="top-links">
-      <a href="/Resident/public/home" onclick="return confirmRedirect(this.href)">Home</a>
-      <span>|</span>
+      <a href="https://brownstoneleasing.com/Resident/public/home"
+         onclick="return confirmRedirect(this.href)">
+        Home
+      </a>
+      <span> | </span>
       <a href="/Resident/apps/portal">Sign in</a>
     </div>
   </header>
@@ -25,25 +29,24 @@
     <a href="/Resident/public/custom/23">Rentals & Showings</a>
     <a href="/Resident/public/custom/22">Pets & Animals</a>
     <a href="/Resident/public/custom/20">Renter’s Insurance</a>
-    <a href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new" target="_blank">
-      Application ↗
-    </a>
+    <a href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new"
+       target="_blank">Application ↗</a>
   </nav>
 
   <main class="content">
     <section class="content-main">
       <h2>History</h2>
       <p>
-        Brownstone Investments LLC, warmly known as Brownstone Leasing, has meticulously cultivated
-        a prestigious history that spans three decades…
+        Brownstone Investments LLC, warmly known as Brownstone Leasing, has
+        meticulously cultivated a prestigious history that spans three decades…
       </p>
-
       <div class="highlight">
         <h3>Would you like to arrange a viewing?</h3>
         <p>
-          Discover your perfect apartment by clicking the “Rentals & Showings” tab on the upper left.
-          There, you’ll find a comprehensive list of available units and can easily schedule a showing.
-          Let’s find your dream space today!
+          Discover your perfect apartment by clicking the “Rentals & Showings”
+          tab on the upper left. There, you’ll find a comprehensive list of
+          available units and can easily schedule a showing. Let’s find your
+          dream space today!
         </p>
       </div>
     </section>
@@ -53,11 +56,11 @@
         <h3>Resident Sign In</h3>
         <label>
           Email
-          <input type="email" placeholder="Email" />
+          <input type="email" placeholder="Email"/>
         </label>
         <label>
           Password
-          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Password"/>
         </label>
         <button>SIGN IN</button>
       </div>
@@ -65,16 +68,16 @@
       <div class="sidebar-section">
         <h4>Management Sign In</h4>
         <p>Property managers, rental owners, and vendors</p>
-        <a href="https://brownstoneinvestments.managebuilding.com/manager/">Sign in here</a>
+        <a href="https://brownstoneinvestments.managebuilding.com/manager/">
+          Sign in here
+        </a>
       </div>
 
       <div class="sidebar-section">
         <h4>Rental Application</h4>
         <p>Interested in one of our properties?</p>
-        <a
-          href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new"
-          target="_blank"
-        >
+        <a href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new"
+           target="_blank">
           Apply online
         </a>
       </div>
@@ -90,13 +93,15 @@
         <a href="https://www.buildium.com/security-policy/">Security</a>
       </nav>
     </div>
-    <p class="legal">© 2025 Powered by Buildium® • Online Property Management</p>
+    <p class="legal">
+      © 2025 Powered by Buildium® • Online Property Management
+    </p>
   </footer>
 
   <script>
     function confirmRedirect(link) {
       return new URL(link).host !== window.location.host
-        ? confirm("You are being redirected to an external site. Continue?")
+        ? confirm('You are being redirected to an external site. Continue?')
         : true;
     }
   </script>
