@@ -1,73 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Cheesman Flats | Apartments in Denver, CO</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <!-- -------  Your styles  ------- -->
-  <link rel="stylesheet" href="vendor/vendor.css">
-  <link rel="stylesheet" href="theme/theme.css">
-  <link rel="stylesheet" href="main/main.css">
+  <meta charset="UTF-8" />
+  <title>Cheesman Flats – Rentals & Showings</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ───────── HEADER ───────── -->
-  <header class="header header--with-logo">
-    <a href="index.html" class="header__branding-link">
-      <img src="assets/logo.png" alt="Cheesman Flats logo"
-           class="header__branding-logo">
-    </a>
+<header>
+  <img src="assets/logo.png" alt="Brownstone Leasing logo">
+</header>
 
-    <nav class="public-site-nav main-nav-bg-color">
-      <div class="public-site-nav__container">
-        <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
-          <a class="public-site-nav__item public-site-nav__link-text" href="#rentals">Rentals&nbsp;&amp;&nbsp;Showings</a>
-        </div>
-        <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
-          <a class="public-site-nav__item public-site-nav__link-text" href="#contact">Contact</a>
-        </div>
-      </div>
-    </nav>
-  </header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="#rentals">Rentals & Showings</a>
+  <a href="#pets">Pets & Animals</a>
+  <a href="#insurance">Renter’s Insurance</a>
+  <a href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new" target="_blank">Application ↗︎</a>
+</nav>
 
-  <!-- ───────── MAIN CONTENT ───────── -->
-  <main class="content-container">
-    <section class="content">
-      <h1 class="title title--medium">Welcome to&nbsp;Cheesman Flats</h1>
-      <p>Modern, pet-friendly apartments one block from Denver’s iconic Cheesman Park.</p>
+<h1>Welcome to Cheesman Flats</h1>
+<p>Modern, pet-friendly apartments one block from Denver’s iconic Cheesman Park.</p>
 
-      <h2 id="rentals" class="title title--small title--margin-top">Rentals &amp; Showings</h2>
-      <p><strong>Ready to tour?</strong> Click below to see our current availability and book a showing.</p>
-      <p>
-        <a class="btn btn--primary"
-           href="https://app.tenantturner.com/listings/brownstoneinvestmentsllc"
-           target="_blank" rel="noopener">
-          View&nbsp;&amp;&nbsp;Schedule&nbsp;Showing
-        </a>
-      </p>
+<h2 id="rentals">Rentals & Showings</h2>
+<p><strong>Ready to tour?</strong> Click below to see our current availability and book a showing.</p>
+<a class="btn" href="https://app.tenantturner.com/listings/brownstoneinvestmentsllc">View & Schedule Showing</a>
 
-      <h2 class="title title--small title--margin-top">Application Fee &amp; PTSR Policy</h2>
-      <p>
-        In accordance with House Bill 23-1099, Brownstone Investments LLC charges only one
-        application fee for co-applicants and refunds it if a lease is not signed.
-        Therefore, we are exempt from accepting Portable Tenant Screening Reports (PTSR).
-      </p>
-    </section>
-  </main>
+<h2>Application Fee & PTSR Policy</h2>
+<p>In accordance with House Bill 23-1099, Brownstone Investments LLC charges only one application fee for co-applicants and refunds it if a lease is not signed. Therefore, we are exempt from accepting Portable Tenant Screening Reports (PTSR).</p>
 
-  <!-- ───────── FOOTER ───────── -->
-  <footer class="content-container">
-    <div class="content footer__legal-section">
-      <p class="text--secondary">
-        &copy; <span id="year"></span> Brownstone Investments LLC &nbsp;•&nbsp; All rights reserved.
-      </p>
-    </div>
-  </footer>
+<footer>
+  © 2025 Brownstone Investments LLC • All rights reserved.
+</footer>
 
-  <script>
-    /* auto-update copyright year */
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
