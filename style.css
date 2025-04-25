@@ -1,89 +1,94 @@
-/* -------------------------------------------------
-   Buildium look-and-feel
-   ------------------------------------------------- */
+/* ────────────────────────────────────────────────────────────────
+   Cheesman Flats  –  site stylesheet
+   (Buildium-blue theme + tiny tweaks to mirror Rentals & Showings)
+   ──────────────────────────────────────────────────────────────── */
+
+/* palette */
 :root{
-  /* Buildium’s primary blue */
-  --bs-primary:#2f80d0;
+  --bs-primary:#2f80d0;   /* Buildium blue */
   --bs-primary-dark:#1060ad;
-  --bs-light-gray:#e5e5e5;
-  --bs-text-gray:#555;
 }
 
-html,body{
-  margin:0;
-  font-family:"Helvetica Neue",Arial,sans-serif;
-  color:#000;
+/* base ---------------------------------------------------------- */
+body{
+  margin:0;                              /* flush with viewport */
+  font-family:"Helvetica Neue", Arial, sans-serif;
 }
 
-/* ─────────────── Top bar (logo + small links) ─────────────── */
+/* ─── top bar (logo + tiny links) ─────────────────────────────── */
 .top-bar{
   background:#fff;
-  border-bottom:1px solid var(--bs-light-gray);
-  padding:.75rem 0;
+  padding:.5rem 0;
   font-size:.875rem;
-}
-.top-bar .container-narrow{
-  display:flex;
+  display:flex;                          /* keep logo + links inline */
+  justify-content:space-between;
   align-items:center;
-  justify-content:space-between;     /* logo left  /  tiny links right */
 }
-.top-bar img{ height:70px; }          /* feel free to adjust */
-.top-links a{
+.top-bar a{
   color:#0d6efd;
   text-decoration:none;
-  margin-left:.5rem;
+  margin-left:.25rem;
 }
-.top-links a:hover{text-decoration:underline;}
 
-/* ─────────────── Main nav strip ─────────────── */
+/* ─── main nav strip ──────────────────────────────────────────── */
 #main-nav{
   background:var(--bs-primary);
-  border-bottom:2px solid var(--bs-primary-dark);
 }
+/* let the bar span full width even though the page is narrow */
+#main-nav .container-narrow{
+  max-width:none;                        /* override 900-px cap */
+  padding:0;
+}
+
 #main-nav a{
   color:#fff;
   font-weight:600;
   text-decoration:none;
   padding:.75rem 1.25rem;
   display:inline-block;
-  border-left:1px solid rgba(255,255,255,.35);
+  border-bottom:3px solid transparent;   /* 1 px white gap top+bottom */
+  line-height:1.15;
 }
-#main-nav a:first-child{border-left:none;}
 #main-nav a:hover,
-#main-nav a.active{
+#main-nav a:focus{
   background:var(--bs-primary-dark);
 }
+#main-nav a.active{                     /* mimic Buildium “current tab” */
+  background:#fff;
+  color:var(--bs-primary-dark);
+  border-bottom-color:var(--bs-primary-dark);
+}
 
-/* ─────────────── Page width & headings ─────────────── */
+/* ─── page container (keeps content narrow) ───────────────────── */
 .container-narrow{
   max-width:900px;
   margin:auto;
   padding:2rem 1rem;
 }
 
-h1{font-size:1.75rem;margin:0 0 1.25rem;}
-h3{font-size:1rem;font-weight:700;margin:1.5rem 0 1rem;}
-
-/* ─────────────── Big blue TenantTurner button ─────────────── */
+/* ─── CTA button (Tenant Turner link) ─────────────────────────── */
 .btn-tt{
   font-size:1.25rem;
-  padding:.75rem 1.75rem;
+  padding:.75rem 1.5rem;
   border:3px solid var(--bs-primary-dark);
   border-radius:6px;
   background:var(--bs-primary);
   color:#fff;
   display:inline-block;
+  text-decoration:none;
+  text-align:center;
 }
-.btn-tt:hover{
+.btn-tt:hover,
+.btn-tt:focus{
   background:var(--bs-primary-dark);
 }
 
-/* ─────────────── Footer ─────────────── */
+/* ─── footer ──────────────────────────────────────────────────── */
 footer{
-  border-top:2px solid var(--bs-light-gray);
+  border-top:2px solid #ddd;
   margin-top:3rem;
   padding:1rem 0;
   font-size:.875rem;
-  color:var(--bs-text-gray);
+  color:#555;
   text-align:left;
 }
