@@ -1,130 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rentals &amp; Showings | Cheesman Flats</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rentals & Showings | Cheesman Flats</title>
 
-  <!-- 👇 still using Bootstrap because it’s already in your repo -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
-  :root{ --bs-primary:#2f80d0; }              /* Buildium blue */
+  <!-- link to the external stylesheet sitting at /style.css -->
+  <link rel="stylesheet" href="style.css" />
 
-  body{ font-family:"Helvetica Neue",Arial,sans-serif; }
-
-  /* ---------- top bar with logo + tiny links ---------- */
-  .top-bar{
-    background:#fff;
-    padding:.35rem 0;          /* was .5rem */
-    font-size:.80rem;          /* was .875rem */
-  }
-  .top-bar a{color:#0d6efd;text-decoration:none;margin-left:.25rem;}
-
-  /* ---------- main nav strip ---------- */
-  #main-nav{
-    background:#2f80d0;
-    box-shadow:0 1px 0 rgba(0,0,0,.15);   /* thin bottom line */
-  }
-  #main-nav a{
-    color:#fff; font-weight:700;          /* bolder text (was 600) */
-    text-decoration:none;
-    padding:.65rem 1.25rem;               /* slightly shorter height */
-    display:inline-block;
-  }
-  #main-nav a.active{
-    background:#2f80d0;                   /* keep same blue */
-    box-shadow:inset 0 -3px 0 #104f8d;    /* underline effect */
-  }
-  #main-nav a:hover{background:#1060ad;}
-
-  /* ---------- page width ---------- */
-  .container-narrow{max-width:900px;margin:auto;padding:2rem 1rem;}
-
-  /* ---------- big “View & Schedule Showing” button ---------- */
-  .btn-tt{
-    font-size:1.1rem;                     /* slightly smaller */
-    padding:.75rem 1.5rem;
-    border:2px solid #104f8d;             /* thinner outline */
-    border-radius:4px;                    /* was 6px */
-    background:#2f80d0;color:#fff;
-  }
-  .btn-tt:hover{background:#1060ad;}
-
-  /* ---------- footer ---------- */
-  footer{
-    border-top:1px solid #ccc;            /* thinner line */
-    margin-top:2.5rem;                    /* was 3rem */
-    padding:1.2rem 0 2rem;                /* more breathing room */
-    font-size:.8rem;                      /* slightly smaller */
-    color:#555;text-align:left;
-  }
-</style>
+  <!-- favicon is optional – comment out if you don’t have one yet -->
+  <!-- <link rel="icon" type="image/png" href="assets/favicon.png"> -->
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-between top-bar">
-      <a href="index.html">
-        <!-- replace with the rectangular PNG you just uploaded -->
-        <img src="assets/bs-logo.png" alt="Brownstone Investments LLC" style="height:60px">
-      </a>
-      <div>
-        <a href="index.html">Home</a> | 
-        <a href="https://brownstoneinvestments.managebuilding.com/Resident/apps/portal" target="_blank">Sign in</a>
-      </div>
+  <!-- ──────────────── Top bar with logo ──────────────── -->
+  <header class="top-bar">
+    <div class="container-narrow">
+      <img src="assets/bs-logo.png"
+           alt="Cheesman Flats / Brownstone Investments logo"
+           height="60" />
+      <span class="top-links">
+        <a href="https://brownstoneleasing.com" target="_blank" rel="noopener">Home</a> |
+        <a href="/Resident/apps/portal" target="_blank" rel="noopener">Sign in</a>
+      </span>
     </div>
-  </div>
+  </header>
 
-  <!-- NAV -->
-  <nav id="main-nav" class="text-center">
-    <div class="container">
-      <a href="index.html">Home</a>
-      <a href="rentals-showings.html" class="active">Rentals &amp; Showings</a>
-      <a href="pets.html">Pets &amp; Animals</a>
-      <a href="insurance.html">Renter's Insurance</a>
-      <a href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new" target="_blank">
-        Application
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" style="margin-left:2px" viewBox="0 0 24 24" fill="currentColor"><path d="M18 13v6H6V6h6V4H6a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-9h-2Zm-5 6h2V8h3.586L13 2.414 7.414 8H11v11Z"/></svg>
-      </a>
+  <!-- ──────────────── Main navigation strip ──────────────── -->
+  <nav id="main-nav">
+    <div class="container-narrow">
+      <a href="https://brownstoneinvestments.managebuilding.com/Resident/public/home" target="_blank" rel="noopener">Home</a>
+      <a href="/" class="active">Rentals &amp; Showings</a>
+      <a href="https://brownstoneinvestments.managebuilding.com/Resident/public/custom/22">Pets &amp; Animals</a>
+      <a href="https://brownstoneinvestments.managebuilding.com/Resident/public/custom/20">Renter’s Insurance</a>
+      <a href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new" target="_blank" rel="noopener">Application ↗</a>
     </div>
   </nav>
 
-  <!-- MAIN -->
+  <!-- ──────────────── Showings content ──────────────── -->
   <main class="container-narrow">
 
-    <h1 class="mb-4">Rentals &amp; Showings</h1>
+    <h1>Rentals &amp; Showings</h1>
 
-    <h5 class="fw-bold">
+    <h3>
       Exemption Compliance with House Bill 23-1099: Application Fee and PTSR Policies
-    </h5>
+    </h3>
 
     <p>
-      In accordance with House Bill 23-1099, Brownstone Investments LLC and the landlords we represent
-      are exempt from the requirements of subsections (1.5)(a)-(1.5)(e) of Colorado Revised Statutes,
-      Section 38-12-904 (1.5). This exemption applies because we charge only one application fee for
-      applicants who will be cohabitating and refund this fee if the lease is not signed. Therefore,
-      we are not required to accept Portable Tenant Screening Reports (PTSR) from prospective tenants,
-      as per the exemption criteria outlined in subsection (1.5)(f).
+      In accordance with House Bill 23-1099, Brownstone Investments LLC and the landlords
+      we represent are exempt from the requirements of subsections (1.5)(a)-(1.5)(e) of
+      Colorado Revised Statutes, Section 38-12-904 (1.5). This exemption applies because
+      we charge only one application fee for applicants who will be cohabitating and
+      refund this fee if the lease is not signed. Therefore, we are not required to
+      accept Portable Tenant Screening Reports (PTSR) from prospective tenants, as per
+      the exemption criteria outlined in subsection (1.5)(f).
     </p>
 
-    <p class="lead">
-      Please click on the link below to view our available apartments and schedule showings at your convenience.
-    </p>
+    <p>Please click on the link below to view our available apartments and schedule showings at your convenience.</p>
 
-    <div class="text-center my-4">
-      <a href="https://app.tenantturner.com/listings/brownstoneinvestmentsllc" class="btn btn-tt">
+    <p style="text-align:center;">
+      <a class="btn-tt" href="https://app.tenantturner.com/listings/brownstoneinvestmentsllc" target="_blank" rel="noopener">
         View &amp; Schedule Showing
       </a>
-    </div>
+    </p>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="container">
-    <strong>Brownstone Investments LLC</strong>  <a href="index.html">Home</a><br>
-    <a href="privacy.html">privacy</a> | <a href="security.html">security</a><br>
-    © 2025 Brownstone Investments LLC • All rights reserved.
+  <!-- ──────────────── Footer ──────────────── -->
+  <footer>
+    <div class="container-narrow">
+      © 2025 Brownstone Investments LLC • All rights reserved.
+    </div>
   </footer>
 
 </body>
