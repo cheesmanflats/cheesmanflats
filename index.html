@@ -1,78 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rentals & Showings | Cheesman Flats</title>
+  <meta charset="utf-8" />
+  <title>Cheesman Flats – Rentals & Showings</title>
 
-  <!-- link to the external stylesheet sitting at /style.css -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Buildium styles -->
+  <link rel="stylesheet" href="theme/vendor.css">
+  <link rel="stylesheet" href="theme/main.css">
 
-  <!-- favicon is optional – comment out if you don’t have one yet -->
-  <!-- <link rel="icon" type="image/png" href="assets/favicon.png"> -->
+  <!-- Your small tweaks – see style.css below -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <!-- ──────────────── Top bar with logo ──────────────── -->
-  <header class="top-bar">
-    <div class="container-narrow">
-      <img src="assets/bs-logo.png"
-           alt="Cheesman Flats / Brownstone Investments logo"
-           height="60" />
-      <span class="top-links">
-        <a href="https://brownstoneleasing.com" target="_blank" rel="noopener">Home</a> |
-        <a href="/Resident/apps/portal" target="_blank" rel="noopener">Sign in</a>
-      </span>
-    </div>
+  <!-- ===== Header / Branding ===== -->
+  <header class="header header--with-logo hide--mobile">
+    <a href="/" class="header__branding-link">
+      <img class="header__branding-logo"
+           src="images/logo.svg"
+           alt="Cheesman Flats">
+    </a>
   </header>
 
-  <!-- ──────────────── Main navigation strip ──────────────── -->
-  <nav id="main-nav">
-    <div class="container-narrow">
-      <a href="https://brownstoneinvestments.managebuilding.com/Resident/public/home" target="_blank" rel="noopener">Home</a>
-      <a href="/" class="active">Rentals &amp; Showings</a>
-      <a href="https://brownstoneinvestments.managebuilding.com/Resident/public/custom/22">Pets &amp; Animals</a>
-      <a href="https://brownstoneinvestments.managebuilding.com/Resident/public/custom/20">Renter’s Insurance</a>
-      <a href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new" target="_blank" rel="noopener">Application ↗</a>
+  <!-- ===== Desktop nav bar ===== -->
+  <nav id="main-nav" class="public-site-nav main-nav-bg-color hide--mobile">
+    <div class="public-site-nav__container">
+      <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
+        <a class="public-site-nav__item public-site-nav__link-text" href="index.html">Home</a>
+      </div>
+      <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
+        <a class="public-site-nav__item public-site-nav__link-text" href="rentals.html">Rentals & Showings</a>
+      </div>
+      <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
+        <a class="public-site-nav__item public-site-nav__link-text" href="pets.html">Pets & Animals</a>
+      </div>
     </div>
   </nav>
 
-  <!-- ──────────────── Showings content ──────────────── -->
-  <main class="container-narrow">
-
-    <h1>Rentals &amp; Showings</h1>
-
-    <h3>
-      Exemption Compliance with House Bill 23-1099: Application Fee and PTSR Policies
-    </h3>
-
-    <p>
-      In accordance with House Bill 23-1099, Brownstone Investments LLC and the landlords
-      we represent are exempt from the requirements of subsections (1.5)(a)-(1.5)(e) of
-      Colorado Revised Statutes, Section 38-12-904 (1.5). This exemption applies because
-      we charge only one application fee for applicants who will be cohabitating and
-      refund this fee if the lease is not signed. Therefore, we are not required to
-      accept Portable Tenant Screening Reports (PTSR) from prospective tenants, as per
-      the exemption criteria outlined in subsection (1.5)(f).
-    </p>
-
-    <p>Please click on the link below to view our available apartments and schedule showings at your convenience.</p>
-
-    <p style="text-align:center;">
-      <a class="btn-tt" href="https://app.tenantturner.com/listings/brownstoneinvestmentsllc" target="_blank" rel="noopener">
-        View &amp; Schedule Showing
+  <!-- ===== Mobile nav (copied verbatim from Buildium) ===== -->
+  <div class="public-site-nav--mobile main-nav-bg-color display--mobile-only">
+    <div class="public-site-nav__item-container main-nav-bg-color main-nav-link-bg-color main-nav-border-color">
+      <a class="public-site-nav__item public-site-nav__link-text" href="index.html">
+        <div class="public-site-nav__icon svgicon--home"></div>
+        Home
       </a>
-    </p>
+    </div>
+    <div class="public-site-nav__item-container main-nav-bg-color main-nav-link-bg-color main-nav-border-color">
+      <a class="public-site-nav__item public-site-nav__link-text" href="rentals.html">
+        <div class="public-site-nav__icon svgicon--sales"></div>
+        Rentals & Showings
+      </a>
+    </div>
+    <div class="public-site-nav__item-container main-nav-bg-color main-nav-link-bg-color main-nav-border-color">
+      <a class="public-site-nav__item public-site-nav__link-text" href="pets.html">
+        <div class="public-site-nav__icon svgicon--info"></div>
+        Pets & Animals
+      </a>
+    </div>
+    <div class="public-site-nav__item-container main-nav-bg-color main-nav-link-bg-color main-nav-border-color">
+      <a class="public-site-nav__item public-site-nav__link-text" href="#resident-sign-in-panel">
+        <div class="public-site-nav__icon svgicon--signin"></div>
+        Sign in
+      </a>
+    </div>
+    <div id="main-nav-mobile-more-link"
+         class="public-site-nav__item-container main-nav-bg-color main-nav-link-bg-color main-nav-border-color">
+      <a class="public-site-nav__item public-site-nav__link-text" href="#">
+        <div class="public-site-nav__icon svgicon--more"></div>
+        More
+      </a>
+    </div>
+  </div>
 
+  <!-- ===== Page body ===== -->
+  <main class="content-container">
+    <!-- Put all your page content here -->
+    <h1 class="title title--medium">Rentals & Showings</h1>
+
+    <!-- Example placeholder -->
+    <p>Welcome to Cheesman Flats.  Browse our listings below…</p>
   </main>
 
-  <!-- ──────────────── Footer ──────────────── -->
-  <footer>
-    <div class="container-narrow">
-      © 2025 Brownstone Investments LLC • All rights reserved.
-    </div>
+  <!-- ===== Simple footer ===== -->
+  <footer class="footer main-nav-bg-color">
+    <p>&copy; 2024 Cheesman Flats. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
