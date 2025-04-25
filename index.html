@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <title>Cheesman Flats – Rentals & Showings</title>
 
-  <!-- Buildium styles -->
+  <!-- Buildium’s own CSS (you already uploaded these) -->
   <link rel="stylesheet" href="theme/vendor.css">
   <link rel="stylesheet" href="theme/main.css">
 
-  <!-- Your small tweaks – see style.css below -->
+  <!-- YOUR tiny tweaks – keep this last so it wins -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- ===== Header / Branding ===== -->
+
+  <!-- ================== Header / Logo ================== -->
   <header class="header header--with-logo hide--mobile">
     <a href="/" class="header__branding-link">
+      <!-- CHANGE this path if your logo lives elsewhere -->
       <img class="header__branding-logo"
-           src="images/logo.svg"
+           src="assets/bs-logo.png"
            alt="Cheesman Flats">
     </a>
   </header>
 
-  <!-- ===== Desktop nav bar ===== -->
+  <!-- ================== Desktop nav =================== -->
   <nav id="main-nav" class="public-site-nav main-nav-bg-color hide--mobile">
     <div class="public-site-nav__container">
+
       <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
         <a class="public-site-nav__item public-site-nav__link-text" href="index.html">Home</a>
       </div>
+
       <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
         <a class="public-site-nav__item public-site-nav__link-text" href="rentals.html">Rentals & Showings</a>
       </div>
+
       <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
         <a class="public-site-nav__item public-site-nav__link-text" href="pets.html">Pets & Animals</a>
       </div>
+
     </div>
   </nav>
 
-  <!-- ===== Mobile nav (copied verbatim from Buildium) ===== -->
+  <!-- ================ Mobile nav (verbatim) ================ -->
   <div class="public-site-nav--mobile main-nav-bg-color display--mobile-only">
     <div class="public-site-nav__item-container main-nav-bg-color main-nav-link-bg-color main-nav-border-color">
       <a class="public-site-nav__item public-site-nav__link-text" href="index.html">
@@ -72,18 +78,16 @@
     </div>
   </div>
 
-  <!-- ===== Page body ===== -->
+  <!-- ================== Page body =================== -->
   <main class="content-container">
-    <!-- Put all your page content here -->
-    <h1 class="title title--medium">Rentals & Showings</h1>
-
-    <!-- Example placeholder -->
-    <p>Welcome to Cheesman Flats.  Browse our listings below…</p>
+    <h1 class="title title--medium">Rentals &amp; Showings</h1>
+    <p>Welcome to Cheesman Flats. Browse our listings below…</p>
   </main>
 
-  <!-- ===== Simple footer ===== -->
+  <!-- ================== Footer =================== -->
   <footer class="footer main-nav-bg-color">
     <p>&copy; 2024 Cheesman Flats. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
