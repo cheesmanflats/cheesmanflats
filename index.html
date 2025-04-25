@@ -1,74 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brownstone Investments LLC</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Cheesman Flats | Apartments in Denver, CO</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- -------  Your styles  ------- -->
+  <link rel="stylesheet" href="vendor/vendor.css">
+  <link rel="stylesheet" href="theme/theme.css">
+  <link rel="stylesheet" href="main/main.css">
 </head>
 <body>
-  <header class="header">
-    <h1 class="branding">Brownstone Investments LLC</h1>
-    <div class="top-links">
-      <a href="#">Home</a> |
-      <a href="#">Sign in</a>
-    </div>
+
+  <!-- ───────── HEADER ───────── -->
+  <header class="header header--with-logo">
+    <a href="index.html" class="header__branding-link">
+      <img src="assets/logo.png" alt="Cheesman Flats logo"
+           class="header__branding-logo">
+    </a>
+
+    <nav class="public-site-nav main-nav-bg-color">
+      <div class="public-site-nav__container">
+        <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
+          <a class="public-site-nav__item public-site-nav__link-text" href="#rentals">Rentals&nbsp;&amp;&nbsp;Showings</a>
+        </div>
+        <div class="public-site-nav__item-container main-nav-link-bg-color main-nav-border-color">
+          <a class="public-site-nav__item public-site-nav__link-text" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <nav class="main-nav">
-    <a href="#">Home</a>
-    <a href="#">Rentals &amp; Showings</a>
-    <a href="#">Pets &amp; Animals</a>
-    <a href="#">Renter's Insurance</a>
-    <a href="#">Application ↗</a>
-  </nav>
+  <!-- ───────── MAIN CONTENT ───────── -->
+  <main class="content-container">
+    <section class="content">
+      <h1 class="title title--medium">Welcome to&nbsp;Cheesman Flats</h1>
+      <p>Modern, pet-friendly apartments one block from Denver’s iconic Cheesman Park.</p>
 
-  <main class="content">
-    <section class="content-main">
-      <h2>History</h2>
-      <p>Brownstone Investments LLC, warmly known as Brownstone Leasing, has meticulously cultivated a prestigious history that spans three decades...</p>
-      <p>Throughout these years, our unwavering dedication has been...</p>
-      <p>We take immense pride in our extensive history...</p>
-      <div class="highlight">
-        <h3>Would you like to arrange a viewing?</h3>
-        <p>Discover your perfect apartment by clicking the “Rentals & Showings” tab on the upper left. There, you’ll find a comprehensive list of available units and can easily schedule a showing. Let’s find your dream space today!</p>
-      </div>
+      <h2 id="rentals" class="title title--small title--margin-top">Rentals &amp; Showings</h2>
+      <p><strong>Ready to tour?</strong> Click below to see our current availability and book a showing.</p>
+      <p>
+        <a class="btn btn--primary"
+           href="https://app.tenantturner.com/listings/brownstoneinvestmentsllc"
+           target="_blank" rel="noopener">
+          View&nbsp;&amp;&nbsp;Schedule&nbsp;Showing
+        </a>
+      </p>
+
+      <h2 class="title title--small title--margin-top">Application Fee &amp; PTSR Policy</h2>
+      <p>
+        In accordance with House Bill 23-1099, Brownstone Investments LLC charges only one
+        application fee for co-applicants and refunds it if a lease is not signed.
+        Therefore, we are exempt from accepting Portable Tenant Screening Reports (PTSR).
+      </p>
     </section>
-
-    <aside class="sidebar">
-      <div class="signin-panel">
-        <h3>Resident Sign In</h3>
-        <label>Email <input type="email" placeholder="Email"></label>
-        <label>Password <input type="password" placeholder="Password"></label>
-        <button>SIGN IN</button>
-      </div>
-
-      <div class="sidebar-section">
-        <h4>Management Sign In</h4>
-        <p>Property managers, rental owners, and vendors</p>
-        <a href="#">Sign in here</a>
-      </div>
-
-      <div class="sidebar-section">
-        <h4>Rental Application</h4>
-        <p>Interested in one of our properties?</p>
-        <a href="#">Apply online</a>
-      </div>
-    </aside>
   </main>
 
-  <footer class="footer">
-    <div class="footer-top">
-      <h2>Brownstone Investments LLC</h2>
-      <nav class="footer-nav">
-        <a href="#">Home</a> |
-        <a href="#">Privacy</a> |
-        <a href="#">Security</a>
-      </nav>
+  <!-- ───────── FOOTER ───────── -->
+  <footer class="content-container">
+    <div class="content footer__legal-section">
+      <p class="text--secondary">
+        &copy; <span id="year"></span> Brownstone Investments LLC &nbsp;•&nbsp; All rights reserved.
+      </p>
     </div>
-    <p class="legal">
-      © 2025 Powered by <a href="#">Buildium®</a> • Online Property Management
-    </p>
   </footer>
+
+  <script>
+    /* auto-update copyright year */
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
