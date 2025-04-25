@@ -1,149 +1,158 @@
-/* === Reset and base === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
   line-height: 1.6;
-  background: #fff;
   color: #333;
+  background: #fff;
 }
 
-/* === Header === */
+a {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
+  padding: 10px 20px;
   background-color: #fff;
 }
-.branding a {
-  font-size: 1.6rem;
+
+.branding span {
+  font-size: 20px;
   font-weight: bold;
-  color: #914d00; /* BROWN */
-  text-decoration: none;
-}
-.top-links {
-  font-size: 0.9rem;
-}
-.top-links a {
-  color: #0074d9;
-  text-decoration: none;
-  margin-left: 0.5rem;
+  color: #a54a00;
 }
 
-/* === Navigation bar === */
+.top-links {
+  font-size: 13px;
+}
+
+.top-links a {
+  color: #0074d9;
+  margin-left: 10px;
+}
+
 .main-nav {
   display: flex;
-  justify-content: center;
-  background-color: #4a90e2; /* Muted blue */
+  background: #4a90e2;
+  padding: 0;
+  border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
+
 .main-nav a {
-  padding: 0.75rem 1.5rem;
-  font-size: 0.95rem;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
   font-weight: bold;
-  text-decoration: none;
-  color: white;
-  border-right: 1px solid #fff;
+  color: #fff;
+  border-right: 1px solid #eee;
 }
+
 .main-nav a:last-child {
   border-right: none;
 }
 
-/* === Main layout === */
 .content {
   display: flex;
   max-width: 1100px;
-  margin: 2rem auto;
-  padding: 0 2rem;
-}
-.content-main {
-  flex: 2;
-  margin-right: 2rem;
-}
-.content-main h2 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-.content-main p {
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
-}
-.highlight {
-  background: #fff8dc;
-  border-left: 4px solid #ffa500;
-  padding: 1rem;
-}
-.highlight h3 {
-  margin-bottom: 0.5rem;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-/* === Sidebar === */
+.content-main {
+  flex: 2;
+  padding-right: 30px;
+}
+
+.content-main h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content-main p {
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  background-color: #fff8dc;
+  border-left: 4px solid #ffa500;
+  padding: 1rem;
+  font-size: 14px;
+}
+
+.highlight h3 {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .sidebar {
   flex: 1;
 }
+
 .signin-panel {
-  background-color: #f0f0f0;
-  padding: 1rem;
+  background-color: #f2f2f2;
+  padding: 15px;
   border: 1px solid #ccc;
-  margin-bottom: 2rem;
-}
-.signin-panel h3 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-.signin-panel input {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.25rem;
-  margin-bottom: 0.75rem;
-  border: 1px solid #ccc;
-}
-.signin-panel button {
-  width: 100%;
-  padding: 0.75rem;
-  background: #4a90e2;
-  color: white;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-}
-.sidebar-section {
-  margin-bottom: 1.5rem;
-}
-.sidebar-section h4 {
-  font-size: 0.9rem;
-  margin-bottom: 0.25rem;
-}
-.sidebar-section a {
-  font-size: 0.85rem;
-  color: #0074d9;
-  text-decoration: none;
+  margin-bottom: 20px;
 }
 
-/* === Footer === */
-.footer {
-  background-color: #f5f8fa;
-  border-top: 1px solid #ccc;
-  padding: 1.5rem;
-  text-align: center;
+.signin-panel h3 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
 }
-.footer-top h2 {
-  font-size: 1rem;
-  color: #444;
-  margin-bottom: 0.5rem;
+
+.signin-panel input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
 }
-.footer-nav a {
-  font-size: 0.85rem;
-  margin: 0 0.5rem;
-  text-decoration: none;
+
+.signin-panel button {
+  width: 100%;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+.sidebar-section h4 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sidebar-section a {
   color: #0074d9;
+  font-size: 13px;
 }
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #f5f8fa;
+  border-top: 1px solid #ccc;
+  font-size: 13px;
+}
+
+.footer-nav a {
+  color: #0074d9;
+  margin: 0 5px;
+  font-size: 13px;
+}
+
 .legal {
-  font-size: 0.75rem;
   color: #666;
-  margin-top: 1rem;
+  font-size: 12px;
+  margin-top: 8px;
 }
