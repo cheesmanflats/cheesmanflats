@@ -1,19 +1,89 @@
-/* === core resets === */
-*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
-img{max-width:100%;height:auto}
-/* === layout === */
-body{max-width:960px;margin:0 auto;padding:25px 15px;line-height:1.45}
-header,nav,footer{margin-bottom:25px}
-nav a{display:inline-block;padding:12px 18px;font-weight:700;color:#fff;background:#4183c3;border-left:1px solid #3a75af;text-decoration:none}
-nav a:hover{background:#3d7cb9}
-.btn{display:inline-block;padding:14px 22px;border-radius:4px;cursor:pointer;background:#91caa5;color:#fff;font-weight:700;text-decoration:none}
-.btn:hover{background:#89bf9c}
-h1{font-size:28px;margin:18px 0 12px}
-h2{font-size:21px;margin:18px 0 8px}
-p{margin:8px 0 14px}
-footer{font-size:12px;color:#666;border-top:1px solid #dbdbdb;padding-top:10px}
-/* mobile tweaks */
-@media(max-width:640px){
-  nav a{padding:10px 8px;font-size:12px}
-  body{padding:15px 8px}
+/* -------------------------------------------------
+   Buildium look-and-feel
+   ------------------------------------------------- */
+:root{
+  /* Buildium’s primary blue */
+  --bs-primary:#2f80d0;
+  --bs-primary-dark:#1060ad;
+  --bs-light-gray:#e5e5e5;
+  --bs-text-gray:#555;
+}
+
+html,body{
+  margin:0;
+  font-family:"Helvetica Neue",Arial,sans-serif;
+  color:#000;
+}
+
+/* ─────────────── Top bar (logo + small links) ─────────────── */
+.top-bar{
+  background:#fff;
+  border-bottom:1px solid var(--bs-light-gray);
+  padding:.75rem 0;
+  font-size:.875rem;
+}
+.top-bar .container-narrow{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;     /* logo left  /  tiny links right */
+}
+.top-bar img{ height:70px; }          /* feel free to adjust */
+.top-links a{
+  color:#0d6efd;
+  text-decoration:none;
+  margin-left:.5rem;
+}
+.top-links a:hover{text-decoration:underline;}
+
+/* ─────────────── Main nav strip ─────────────── */
+#main-nav{
+  background:var(--bs-primary);
+  border-bottom:2px solid var(--bs-primary-dark);
+}
+#main-nav a{
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+  padding:.75rem 1.25rem;
+  display:inline-block;
+  border-left:1px solid rgba(255,255,255,.35);
+}
+#main-nav a:first-child{border-left:none;}
+#main-nav a:hover,
+#main-nav a.active{
+  background:var(--bs-primary-dark);
+}
+
+/* ─────────────── Page width & headings ─────────────── */
+.container-narrow{
+  max-width:900px;
+  margin:auto;
+  padding:2rem 1rem;
+}
+
+h1{font-size:1.75rem;margin:0 0 1.25rem;}
+h3{font-size:1rem;font-weight:700;margin:1.5rem 0 1rem;}
+
+/* ─────────────── Big blue TenantTurner button ─────────────── */
+.btn-tt{
+  font-size:1.25rem;
+  padding:.75rem 1.75rem;
+  border:3px solid var(--bs-primary-dark);
+  border-radius:6px;
+  background:var(--bs-primary);
+  color:#fff;
+  display:inline-block;
+}
+.btn-tt:hover{
+  background:var(--bs-primary-dark);
+}
+
+/* ─────────────── Footer ─────────────── */
+footer{
+  border-top:2px solid var(--bs-light-gray);
+  margin-top:3rem;
+  padding:1rem 0;
+  font-size:.875rem;
+  color:var(--bs-text-gray);
+  text-align:left;
 }
