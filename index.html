@@ -2,140 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Home</title>
-
-  <!-- your stylesheet -->
+  <title>Brownstone Investments LLC</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- favicon -->
-  <link rel="shortcut icon" href="/Resident/favicon.ico" type="image/ico" />
 </head>
 <body>
-
-  <!-- Header (desktop only) -->
-  <header class="header hide--mobile">
-    <h1>
-      <a href="/Resident/public/home"
-         class="header__branding-logo-text header__branding accent-color">
-        Brownstone Investments LLC
-      </a>
-    </h1>
-    <div class="header__links">
-      <a href="https://brownstoneleasing.com/Resident/public/home"
-         onclick="return confirmExternal(this.href)"
-         class="header__links__link">Home</a>
-      |
-      <a href="/Resident/apps/portal">Sign in</a>
+  <header class="header">
+    <h1 class="branding">Brownstone Investments LLC</h1>
+    <div class="top-links">
+      <a href="https://brownstoneleasing.com/Resident/public/home" onclick="return confirmRedirect(this.href)">Home</a>
+      <span> | </span>
+      <a href="/Resident/apps/portal">Sign&nbsp;in</a>
     </div>
   </header>
 
-  <!-- Global nav -->
-  <nav class="public-site-nav main-nav-bg-color hide--mobile" id="navbar-main">
-    <div class="public-site-nav__item-container">
-      <a href="/Resident/public/home" class="public-site-nav__item public-site-nav__link-text">
-        Home
-      </a>
-    </div>
-    <div class="public-site-nav__item-container">
-      <a href="/Resident/public/custom/23" class="public-site-nav__item public-site-nav__link-text">
-        Rentals &amp; Showings
-      </a>
-    </div>
-    <div class="public-site-nav__item-container">
-      <a href="/Resident/public/custom/22" class="public-site-nav__item public-site-nav__link-text">
-        Pets &amp; Animals
-      </a>
-    </div>
-    <div class="public-site-nav__item-container">
-      <a href="/Resident/public/custom/20" class="public-site-nav__item public-site-nav__link-text">
-        Renter’s Insurance
-      </a>
-    </div>
-    <div class="public-site-nav__item-container">
-      <a href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new"
-         target="_blank"
-         class="public-site-nav__item public-site-nav__link-text">
-        Application  
-      </a>
-    </div>
+  <nav class="main-nav">
+    <a href="/Resident/public/home">Home</a>
+    <a href="/Resident/public/custom/23">Rentals &amp; Showings</a>
+    <a href="/Resident/public/custom/22">Pets &amp; Animals</a>
+    <a href="/Resident/public/custom/20">Renter’s Insurance</a>
+    <a href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new" target="_blank">
+      Application ↗
+    </a>
   </nav>
 
-  <!-- Main content + sidebar -->
-  <div class="content-container">
-    <!-- left column -->
-    <div class="home__main-content column column--lg8 column--md12 column--sm12">
-      <div class="home__custom-content custom-content">
-        <h3>History</h3>
-        <p>
-          Brownstone Investments LLC, warmly known as Brownstone Leasing, has meticulously cultivated
-          a prestigious history that spans three decades. This history is characterized by the
-          management of a carefully selected collection of historic homes that have been elegantly
-          transformed into premium apartments… 
-        </p>
-        <!-- …more paragraphs… -->
-        <h3 class="highlight">
-          Would you like to arrange a viewing?
-        </h3>
-        <p class="highlight">
-          Discover your perfect apartment by clicking the “Rentals & Showings” tab on the upper
-          left. There, you’ll find a comprehensive list of available units and can easily
-          schedule a showing. Let’s find your dream space today!
-        </p>
-      </div>
-    </div>
+  <main class="content">
+    <section class="content-main">
+      <h2>History</h2>
+      <p>Brownstone Investments LLC, warmly known as Brownstone Leasing, has meticulously cultivated a prestigious history that spans three decades…</p>
 
-    <!-- right sidebar -->
-    <aside class="home__sidebar column column--lg4 column--md12 column--sm12">
-      
-      <div id="resident-sign-in-panel"
-           class="sign-in-panel sidebar-bg-color sidebar-border">
-        <h3 class="sidebar__title">Resident Sign In</h3>
-        <label for="resident-email">Email</label>
-        <input type="email" id="resident-email" placeholder="Email" />
-        <label for="resident-password">Password</label>
-        <input type="password" id="resident-password" placeholder="Password" />
+      <div class="highlight">
+        <h3>Would you like to arrange a viewing?</h3>
+        <p>Discover your perfect apartment by clicking the “Rentals & Showings” tab on the upper left. There, you’ll find a comprehensive list of available units and can easily schedule a showing. Let’s find your dream space today!</p>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="signin-panel">
+        <h3>Resident Sign&nbsp;In</h3>
+        <label>Email<input type="email" placeholder="Email"></label>
+        <label>Password<input type="password" placeholder="Password"></label>
         <button>SIGN IN</button>
       </div>
 
-      <div class="sidebar__section sign-in-panel sidebar-bg-color sidebar-border">
-        <h3 class="sidebar__title">Management Sign In</h3>
+      <div class="sidebar-section">
+        <h4>Management Sign&nbsp;In</h4>
         <p>Property managers, rental owners, and vendors</p>
-        <a href="https://brownstoneinvestments.managebuilding.com/manager/"
-           class="link link--primary">Sign in here</a>
+        <a href="https://brownstoneinvestments.managebuilding.com/manager/">Sign in here</a>
       </div>
 
-      <div class="sidebar__section sign-in-panel sidebar-bg-color sidebar-border">
-        <h3 class="sidebar__title">Rental Application</h3>
+      <div class="sidebar-section">
+        <h4>Rental Application</h4>
         <p>Interested in one of our properties?</p>
-        <a href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new"
-           target="_blank"
-           class="link link--primary">Apply online</a>
+        <a href="https://brownstoneinvestments.managebuilding.com/Resident/rental-application/new" target="_blank">Apply online</a>
       </div>
     </aside>
-  </div>
+  </main>
 
-  <!-- Footer -->
   <footer class="footer">
-    <h2 class="footer__title">Brownstone Investments LLC</h2>
-    <div>
-      <a href="https://brownstoneleasing.com/Resident/public/home"
-         class="footer__legal-link">Home</a>
-      |
-      <a href="https://www.buildium.com/privacy-policy/"
-         class="footer__legal-link">Privacy</a>
-      |
-      <a href="https://www.buildium.com/security-policy/"
-         class="footer__legal-link">Security</a>
+    <div class="footer-top">
+      <h2>Brownstone Investments LLC</h2>
+      <nav class="footer-nav">
+        <a href="/Resident/public/home">Home</a>
+        <a href="https://www.buildium.com/privacy-policy/">Privacy</a>
+        <a href="https://www.buildium.com/security-policy/">Security</a>
+      </nav>
     </div>
-    <p>&copy; 2025 Powered by Buildium® • Online Property Management</p>
+    <p class="legal">© 2025 Powered by Buildium® • Online Property Management</p>
   </footer>
 
   <script>
-    function confirmExternal(link) {
+    function confirmRedirect(link) {
       return new URL(link).host !== window.location.host
-        ? confirm('You are about to leave this site. Continue?')
+        ? confirm('You are being redirected to an external site. Continue?')
         : true;
     }
   </script>
