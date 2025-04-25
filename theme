@@ -1,0 +1,68 @@
+.main-nav-bg-color {
+    background-color: #4183c3;
+}
+
+.main-nav-link-bg-color:hover,
+.main-nav-link-bg-color:focus {
+    background-color: #3D7CB9;
+}
+
+.main-nav-focus-color {
+    background-color: #376FA5;
+}
+
+.main-nav-border-color {
+    border-left: 1px solid #3A75AF;
+}
+
+.main-nav-border-color:last-child {
+    border-right: 1px solid #3A75AF;
+}
+
+.main-nav-border-color--more-menu {
+    border: 1px solid #3A75AF;
+}
+
+.button-bg-color {
+    background-color: #91CAA5;
+}
+
+.button-bg-color:hover,
+.button-bg-color:focus {
+    background-color: #89BF9C;
+}
+
+.secondary-button-color {
+    border: 1px solid #91CAA5;
+    color: #91CAA5;
+}
+
+.secondary-button-color:hover,
+.secondary-button-color:focus {
+    border: 1px solid #89BF9C;
+    color: #89BF9C;
+}
+
+a, a:active {
+    color: #3E81C7;
+}
+
+.action-color {
+    color: #3E81C7;
+}
+
+.accent-color {
+    color: #964B00;
+}
+
+.accent-color-border-on-hover:hover {
+    border-color: #964B00;
+}
+
+.sidebar-bg-color {
+    background-color: #F7F7F7;
+}
+
+.sidebar-border {
+    border: 1px solid #D6D6D6;
+}
